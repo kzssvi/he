@@ -6,7 +6,7 @@ import telebot
 from telebot import types
 
 import sketch
-TOKEN = '632985476:AAFfx7TD5eeKRhgexKBgMERA6zgD7znLFD4'
+TOKEN = '5301080421:AAEjAaazeYXcHm3h3hkvdAWYs19VTb51Z7A'
 bot = telebot.TeleBot(TOKEN)
 server = Flask(__name__)
 
@@ -54,7 +54,7 @@ def getMessage():
 @server.route("/")
 def webhook():
     bot.remove_webhook()
-    bot.set_webhook(url='https://sheltered-earth-64926.herokuapp.com/' + TOKEN)
+    bot.set_webhook(url='https://ser-6fb1bd33d0d9.herokuapp.com/' + TOKEN)
     return "!", 200
 
 
